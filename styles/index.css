@@ -425,13 +425,10 @@ button:hover {
 }
 
 .features__bottom {
-  position: relative;
-  bottom: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 60px;
 }
 
 .features__hero {
