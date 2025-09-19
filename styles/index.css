@@ -340,9 +340,7 @@ button:hover {
   margin-bottom: 23px;
 }
 
-.feature__title,
-.feature__title-left,
-.feature__title-right {
+.feature__title {
   font-weight: 600;
   font-size: 25px;
   line-height: 38px;
@@ -394,29 +392,26 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  max-width: 350px;
 }
 
 .feature__item-right {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 350px;
 }
 
-.feature__desc-left,
+.feature__desc-left {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primaty-white);
+  text-align: right;
+}
 .feature__desc-right {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: var(--primaty-white);
-}
-
-.feature__desc-left {
-  text-align: right;
-}
-
-.feature__desc-right {
   text-align: left;
 }
 
@@ -433,3 +428,77 @@ button:hover {
   align-self: center;
 }
 /*  Features   */
+
+/*  Download   */
+
+.download__container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 135px;
+  gap: 80px;
+}
+
+.download__info {
+  max-width: 570px;
+}
+
+.download__title {
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #232233;
+}
+
+.download__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6c6c72;
+  padding-bottom: 40px;
+}
+
+.download__icons {
+  display: flex;
+  gap: 25px;
+  padding-bottom: 60px;
+}
+
+.download__list {
+  display: flex;
+  gap: 30px;
+}
+
+.download__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 35px 0 20px 0;
+  width: 170px;
+  height: 176px;
+  box-sizing: border-box;
+}
+
+.download__stat-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: var(--primaty-white);
+  padding: 22px 0 18px 0;
+}
+
+.download__stat-desc {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--primaty-white);
+}
+
+/*  Download   */
