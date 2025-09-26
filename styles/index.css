@@ -87,15 +87,27 @@ button:hover {
   gap: 32px;
 }
 
-.nav__list {
+.nav__lists {
   display: flex;
-  gap: 38px;
   align-items: center;
+  gap: 360px;
   background: var(--primaty-white);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 3px 5px 3px 52px;
   display: flex;
+}
+.nav__list-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+.nav__list-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
 }
 
 .nav__link {
@@ -138,6 +150,12 @@ button:hover {
   background: #ffffff;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+}
+
+@media (max-width: 1400px) {
+  .hero__content {
+    max-width: 780px;
+  }
 }
 /*  Nav  */
 /*  Hero  */
