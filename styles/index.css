@@ -104,6 +104,9 @@ button:hover {
   justify-content: center;
   gap: 38px;
 }
+.nav__list-left li:last-child {
+  display: none;
+}
 .nav__list-right {
   display: flex;
   align-items: center;
@@ -330,7 +333,7 @@ button:hover {
   background: var(--primaty-white);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   position: relative;
-  left: 150px;
+  left: 80px;
   bottom: 55px;
 }
 
@@ -345,7 +348,6 @@ button:hover {
 .features {
   background-image: url(../images/Background__features.svg);
   min-height: 100vh;
-  max-height: 1710px;
 }
 
 .features__head {
@@ -394,7 +396,6 @@ button:hover {
   font-size: 25px;
   line-height: 38px;
   display: flex;
-  align-items: flex-end;
   text-align: right;
   text-transform: uppercase;
   color: var(--primaty-white);
@@ -406,7 +407,6 @@ button:hover {
   font-size: 25px;
   line-height: 38px;
   display: flex;
-  align-items: flex-end;
   text-align: left;
   text-transform: uppercase;
   color: var(--primaty-white);
@@ -464,6 +464,7 @@ button:hover {
 }
 
 .features__bottom-wrapper {
+  display: block;
   position: relative;
   top: -200px;
 }
@@ -475,10 +476,65 @@ button:hover {
   flex-direction: column;
 }
 
+.features__hero-div {
+  position: relative;
+}
+
 .features__hero {
   position: relative;
   bottom: 120px;
-  left: 33px;
+  left: 36px;
+}
+
+@media (max-width: 1100px) {
+  .features__hero {
+    max-width: 100%;
+    height: auto;
+  }
+  .feature__list {
+    gap: 90px;
+  }
+}
+
+@media (max-width: 680px) {
+  .features__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .feature__list {
+    justify-content: center;
+    align-items: center;
+  }
+  .feature__item-left {
+    align-items: center;
+  }
+  .feature__title-left {
+    text-align: center;
+  }
+  .feature__desc-left {
+    text-align: center;
+  }
+  .feature__item-right {
+    align-items: center;
+  }
+  .feature__title-right {
+    text-align: center;
+  }
+  .feature__desc-right {
+    text-align: center;
+  }
+  .features__hero {
+    position: static;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+  .features__bottom-wrapper {
+    margin-top: 90px;
+    position: static;
+  }
 }
 /*  Features   */
 
@@ -674,10 +730,11 @@ button:hover {
   border: none;
   border-radius: 5px;
   padding: 35px 0 20px 0;
-  flex: 1 1 150px; /* can shrink/grow */
-  max-width: 200px; /* optional */
-  aspect-ratio: 1 / 1; /* height = width */
-  padding: 0; /* remove fixed padding */
+  flex: 1 1 150px;
+  max-width: 200px;
+  min-width: 110px;
+  aspect-ratio: 1 / 1;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -719,10 +776,10 @@ button:hover {
 }
 
 .about__hero-img {
-  max-width: 100%; /* scales down with container */
-  height: auto; /* maintain aspect ratio */
-  display: block; /* remove inline spacing */
-  flex-shrink: 1;
+  max-width: 100%;
+  min-width: 50%;
+  height: auto;
+  display: block;
   position: relative;
   z-index: 1;
 }
