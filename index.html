@@ -46,9 +46,12 @@
           </div>
 
           <div class="nav__main">
-            <a href="/" class="nav__logo">
-              <img src="images/Logo.svg" alt="Appolly logo" />
-            </a>
+            <div class="nav__logo-container">
+              <a href="/" class="nav__logo">
+                <img src="images/Logo.svg" alt="Appolly logo" />
+              </a>
+            </div>
+
             <div class="nav__lists">
               <ul class="nav__list-left">
                 <li class="nav__item">
@@ -61,9 +64,9 @@
                   <a href="#" class="nav__link">Features</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link"
-                    ><img src="images/menu-line.svg" alt="menu"
-                  /></a>
+                  <button class="nav__link nav-toggle-button">
+                    <img src="images/menu-line.svg" alt="menu" />
+                  </button>
                 </li>
               </ul>
               <ul class="nav__list-right">
@@ -84,29 +87,32 @@
         </nav>
         <!--Nav-->
         <!--Hero-->
-        <div class="hero__content">
-          <img
-            class="hero__info-rectangle"
-            src="images/Hero-rectangle.svg"
-            alt=""
-          />
-          <div class="hero__info">
-            <h1 class="hero__title">A Great App Makes Your Life Better</h1>
-            <p class="hero__desc">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            <h3 class="hero__download">Download App Now</h3>
-            <ul class="hero__options">
-              <li class="hero__option">
-                <img src="images/GooglePlay.svg" alt="GooglePlay" />
-              </li>
-              <li class="hero__option">
-                <img src="images/App Store.svg" alt="App Store" />
-              </li>
-            </ul>
+        <div class="hero__container">
+          <div class="hero__content">
+            <img
+              class="hero__info-rectangle"
+              src="images/Hero-rectangle.svg"
+              alt=""
+            />
+            <div class="hero__info">
+              <h1 class="hero__title">A Great App Makes Your Life Better</h1>
+              <p class="hero__desc">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <h3 class="hero__download">Download App Now</h3>
+              <ul class="hero__options">
+                <li class="hero__option">
+                  <img src="images/GooglePlay.svg" alt="GooglePlay" />
+                </li>
+                <li class="hero__option">
+                  <img src="images/App Store.svg" alt="App Store" />
+                </li>
+              </ul>
+            </div>
           </div>
+
           <img
             class="hero__img"
             src="images/Hero__smartphone.svg"
@@ -127,6 +133,7 @@
           tempor, ac nunc libero urna, feugiat.
         </p>
       </div>
+
       <div class="about__section">
         <div class="about__hero">
           <img
@@ -525,7 +532,7 @@
                 alt="Carla Press photo"
               />
             </div>
-            <h3 class="team__person-title">Jocelyn Septimus</h3>
+            <h3 class="team__person-title">Brenda Evans</h3>
             <h4 class="team__person-position">Website developer</h4>
             <p class="team__person-desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
@@ -570,7 +577,7 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="contact">
+        <div class="contact__container">
           <div class="contact__info">
             <ul class="contact__list">
               <li class="contact__item">
@@ -643,7 +650,7 @@
                 <h4 class="footer__title">quick link</h4>
                 <ul class="footer__qlink-list">
                   <li class="footer__qlink-item">
-                    <a class="footer__a footer__desc">About</a>
+                    <a class="footer__desc">About</a>
                   </li>
                   <li class="footer__qlink-item">
                     <a class="footer__desc">Features</a>
@@ -674,6 +681,12 @@
                 </button>
               </div>
             </div>
+          </div>
+          <div class="footer__copyright">
+            <img src="images/copyright.svg" alt="copyright" />
+            <p class="footer__copyright-desc">
+              Copyright 2021 .Ojjomedia. All Right Reserved.
+            </p>
           </div>
         </div>
       </div>

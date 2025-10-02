@@ -1,3 +1,10 @@
+const btnElem = document.querySelector(".nav-toggle-button");
+const navElem = document.querySelector(".nav__lists");
+
+btnElem.onclick = function () {
+  navElem.classList.toggle("nav__open");
+};
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
