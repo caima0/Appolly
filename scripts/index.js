@@ -1,8 +1,13 @@
 const btnElem = document.querySelector(".nav-toggle-button");
-const navElem = document.querySelector(".nav__lists");
+const navElem = document.querySelector(".nav__list-menu");
 
 btnElem.onclick = function () {
-  navElem.classList.toggle("nav__open");
+  const isOpen = navElem.classList.toggle("nav__open");
+  if (isOpen === true) {
+    document.querySelector("html").style.overflow = "hidden";
+  } else {
+    document.querySelector("html").style.overflow = "auto";
+  }
 };
 
 const swiper = new Swiper(".swiper", {

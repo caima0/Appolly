@@ -174,22 +174,9 @@ button:hover {
 .nav-toggle-button {
   background: none;
   border: none;
+  z-index: 3;
 }
 
-.nav__open {
-  background-color: var(--primaty-white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 12px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-}
 /*  Nav  */
 /*  Hero  */
 
@@ -283,7 +270,11 @@ button:hover {
   left: 50px;
 }
 
-@media (max-width: 1400px) {
+.nav__list-menu {
+  display: none;
+}
+
+@media (max-width: 1100px) {
   .nav__list-left li {
     display: none;
   }
@@ -299,9 +290,6 @@ button:hover {
   .nav__lists {
     justify-content: space-between;
   }
-}
-
-@media (max-width: 1100px) {
   .hero__title {
     font-size: 31.25px;
     line-height: 47px;
@@ -356,9 +344,27 @@ button:hover {
   .hero__img {
     left: 90px;
   }
-  .nav__list-left.nav__open {
+  .nav__list-menu.nav__open li {
     display: flex;
   }
+}
+.nav__list-menu.nav__open li {
+  display: flex;
+}
+
+.nav__open {
+  background-color: var(--primaty-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 /*  Hero  */
@@ -459,7 +465,6 @@ button:hover {
 /*  Features  */
 .features {
   background-image: url(../images/Background__features.svg);
-  min-height: 100vh;
 }
 
 .features__head {
@@ -925,6 +930,9 @@ button:hover {
   }
   .download__list {
     gap: 18px;
+  }
+  .download__HeroEclipse {
+    left: 200px;
   }
 }
 /*  Download   */
