@@ -10,7 +10,6 @@ body {
 
 .hero {
   background-image: url(../images/BackgroundImage.jpg);
-  min-height: 100vh;
 }
 
 ul {
@@ -537,11 +536,13 @@ button:hover {
   text-align: center;
   color: var(--primaty-white);
   max-width: 300px;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 .features__container {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature__list {
@@ -555,6 +556,7 @@ button:hover {
   flex-direction: column;
   align-items: flex-end;
   max-width: 350px;
+  margin-right: 60px;
 }
 
 .feature__item-right {
@@ -562,6 +564,7 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   max-width: 350px;
+  margin-left: 60px;
 }
 
 .feature__desc-left {
@@ -580,10 +583,8 @@ button:hover {
   color: var(--primaty-white);
 }
 
-.features__bottom-wrapper {
-  display: block;
-  position: relative;
-  top: -200px;
+.features__bottom {
+  margin-top: 60px;
 }
 
 .features__bottom {
@@ -593,23 +594,15 @@ button:hover {
   flex-direction: column;
 }
 
-.features__hero-div {
-  position: relative;
-}
-
-.features__hero {
-  position: relative;
-  bottom: 120px;
-  left: 36px;
-}
-
 @media (max-width: 1100px) {
-  .features__hero {
-    max-width: 100%;
-    height: auto;
-  }
   .feature__list {
-    gap: 90px;
+    gap: 150px;
+  }
+  .feature__item-left {
+    margin-right: 30px;
+  }
+  .feature__item-right {
+    margin-left: 30px;
   }
 }
 
@@ -622,9 +615,11 @@ button:hover {
   .feature__list {
     justify-content: center;
     align-items: center;
+    gap: 40px;
   }
   .feature__item-left {
     align-items: center;
+    margin-right: 0;
   }
   .feature__title-left {
     text-align: center;
@@ -634,6 +629,7 @@ button:hover {
   }
   .feature__item-right {
     align-items: center;
+    margin-left: 0;
   }
   .feature__title-right {
     text-align: center;
@@ -643,9 +639,9 @@ button:hover {
   }
   .features__hero {
     position: static;
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
-    margin: 20px auto;
+    margin: 40px 0 40px 0;
     display: block;
   }
   .features__bottom-wrapper {
