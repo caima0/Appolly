@@ -638,11 +638,9 @@ button:hover {
     text-align: center;
   }
   .features__hero {
-    position: static;
     max-width: 100%;
     height: auto;
-    margin: 40px 0 40px 0;
-    display: block;
+    margin: 60px 0 60px 0;
   }
   .features__bottom-wrapper {
     margin-top: 90px;
@@ -1115,6 +1113,15 @@ button:hover {
   border-radius: 50%;
   background-color: var(--primary-color);
   margin-right: 18px;
+  border: none;
+}
+
+.contact__button:hover {
+  cursor: auto;
+}
+
+.contact__button-hover:hover {
+  cursor: pointer;
 }
 
 .contact__icon {
